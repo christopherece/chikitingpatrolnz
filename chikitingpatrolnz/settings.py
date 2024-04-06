@@ -28,7 +28,10 @@ SECRET_KEY = 'django-insecure-o2q^+$6!gt&i8p$5q%_mbv-kjv98uffxc3#b+)p1n=_0cqq@r-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '192.168.10.221','chikitingpatrolnz.com','travelblog.chikitingpatrolnz.com']
+CSRF_TRUSTED_ORIGINS = [
+    'https://chikitingpatrolnz.com','http://chikitingpatrolnz.com'
+]
 
 
 # Application definition
