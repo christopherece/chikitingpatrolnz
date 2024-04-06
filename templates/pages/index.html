@@ -10,14 +10,26 @@
   <h1 class="popular-tours-heading">Recent Adventure</h1>
   <div class="cards-wrapper">
     <div class="card">
-      <div class="front-side">
+      <!-- Wrap the image inside a link with 'data-lightbox' attribute -->
+      <a href="{% static 'images/agrodome.jpg' %}" data-lightbox="agrodome" data-title="Agrodome">
         <img src="{% static 'images/agrodome.jpg' %}" alt="Agrodome" class="card-image" />
         <h1 class="tour-name">Agrodome</h1>
         <ul class="card-list">
           <li class="card-list-item">Title</li>
         </ul>
-      </div>            
+      </a>
     </div>
+    <div class="card">
+      <!-- Wrap the image inside a link with 'data-lightbox' attribute -->
+      <a href="{% static 'images/cherryb.jpg' %}" data-lightbox="agrodome" data-title="Another Image">
+        <img src="{% static 'images/cherryb.jpg' %}" alt="Another Image" class="card-image" />
+        <h1 class="tour-name">Another Image</h1>
+        <ul class="card-list">
+          <li class="card-list-item">Title</li>
+        </ul>
+      </a>
+    </div>
+    
     <div class="card">
       <div class="front-side">
         <img src="{% static 'images/cherryb.JPG' %}" alt="Cherry Blossom 2023" class="card-image" />
