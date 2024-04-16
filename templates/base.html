@@ -59,6 +59,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <script src="mail/contact.js"></script>
+    <script>
+      function toggleImages(card) {
+        var frontSide = card.querySelector('.front-side');
+        var backSide = card.querySelector('.back-side');
+      
+        if (frontSide.style.display === "block") {
+          frontSide.style.display = "none";
+          backSide.style.display = "block";
+        } else {
+          frontSide.style.display = "block";
+          backSide.style.display = "none";
+        }
+      }
+      </script>
 
     <!-- Template Javascript -->
     <script src="{% static 'js/script.js' %}"></script>
