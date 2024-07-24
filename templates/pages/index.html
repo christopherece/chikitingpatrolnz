@@ -10,79 +10,55 @@
   <h1 class="popular-tours-heading">Recent Adventure</h1>
   <div class="cards-wrapper">
     <div class="card">
-      <!-- Wrap the image inside a link with 'data-lightbox' attribute -->
-      <a href="{% static 'images/agrodome.jpg' %}" data-lightbox="agrodome" data-title="Agrodome">
+      <a href="{% static 'images/agrodome1.jpg' %}" data-lightbox="agrodome" data-title="Agrodome - Image 1">
         <img src="{% static 'images/agrodome.jpg' %}" alt="Agrodome" class="card-image" />
         <h1 class="tour-name">Agrodome</h1>
         <ul class="card-list">
           <li class="card-list-item">Title</li>
         </ul>
       </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/agrodome2.jpg' %}" data-lightbox="agrodome" data-title="Agrodome - Image 2"></a>
+      <a href="{% static 'images/agrodome3.jpg' %}" data-lightbox="agrodome" data-title="Agrodome - Image 3"></a>
     </div>
+    
     <div class="card">
-      <!-- Wrap the image inside a link with 'data-lightbox' attribute -->
-      <a href="{% static 'images/chikitingbg.jpg' %}" data-lightbox="agrodome" data-title="Another Image">
+      <a href="{% static 'images/chikitingbg1.jpg' %}" data-lightbox="chikiting" data-title="Another Image - Image 1">
         <img src="{% static 'images/chikitingbg.jpg' %}" alt="Another Image" class="card-image" />
         <h1 class="tour-name">Another Image</h1>
         <ul class="card-list">
           <li class="card-list-item">Title</li>
         </ul>
       </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/chikitingbg2.jpg' %}" data-lightbox="chikiting" data-title="Another Image - Image 2"></a>
+      <a href="{% static 'images/chikitingbg3.jpg' %}" data-lightbox="chikiting" data-title="Another Image - Image 3"></a>
     </div>
     
     <div class="card">
-      <div class="front-side">
+      <a href="{% static 'images/cherryb1.JPG' %}" data-lightbox="cherryb" data-title="Cherry Blossom 2023 - Image 1">
         <img src="{% static 'images/cherryb.JPG' %}" alt="Cherry Blossom 2023" class="card-image" />
         <h1 class="tour-name">Cherry Blossom 2023</h1>
         <ul class="card-list">
           <li class="card-list-item">7 days tour</li>
         </ul>
-      </div>            
+      </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/cherryb2.JPG' %}" data-lightbox="cherryb" data-title="Cherry Blossom 2023 - Image 2"></a>
+      <a href="{% static 'images/cherryb3.JPG' %}" data-lightbox="cherryb" data-title="Cherry Blossom 2023 - Image 3"></a>
     </div>
+    
     <div class="card">
-      <div class="front-side">
-        <img src="{% static 'images/Potaroro.jpg' %}" alt="Forest" class="card-image" />
+      <a href="{% static 'images/Potaroro1.jpg' %}" data-lightbox="potaroro" data-title="Potaroro Escapade - Image 1">
+        <img src="{% static 'images/Potaroro.jpg' %}" alt="Potaroro Escapade" class="card-image" />
         <h1 class="tour-name">Potaroro Escapade</h1>
         <ul class="card-list">
           <li class="card-list-item">Title</li>
         </ul>
-      </div>            
-    </div>
-    <div class="card">
-      <div class="front-side">
-        <img src="{% static 'images/xmas2023.JPG' %}" alt="xmas2023" class="card-image" />
-        <h1 class="tour-name">Chikiting Xmas 2023</h1>
-        <ul class="card-list">
-          <li class="card-list-item">Title</li>
-        </ul>
-      </div>            
-    </div>
-    
-    <div class="card">
-      <div class="front-side">
-        <img src="{% static 'images/scottslanding.jpg' %}" alt="scottslanding" class="card-image" />
-        <h1 class="tour-name">Piknik at Scots Landing</h1>
-        <ul class="card-list">
-          <li class="card-list-item">Title</li>
-        </ul>
-      </div>            
-    </div>
-    <div class="card">
-      <div class="front-side">
-        <img src="{% static 'images/scottslanding.jpg' %}" alt="scottslanding" class="card-image" />
-        <h1 class="tour-name">Piknik at Scots Landing</h1>
-        <ul class="card-list">
-          <li class="card-list-item">Title</li>
-        </ul>
-      </div>            
-    </div><div class="card">
-      <div class="front-side">
-        <img src="{% static 'images/scottslanding.jpg' %}" alt="scottslanding" class="card-image" />
-        <h1 class="tour-name">Piknik at Scots Landing</h1>
-        <ul class="card-list">
-          <li class="card-list-item">Title</li>
-        </ul>
-      </div>            
+      </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/Potaroro2.jpg' %}" data-lightbox="potaroro" data-title="Potaroro Escapade - Image 2"></a>
+      <a href="{% static 'images/Potaroro3.jpg' %}" data-lightbox="potaroro" data-title="Potaroro Escapade - Image 3"></a>
     </div>
     
   </div>
@@ -90,7 +66,7 @@
 <!-- End of Popular tours -->
 
 <!-- Stories -->
-<section class="stories" id="stories" style="padding-top: 0px;">
+<section class="stories" id="stories" style="padding: 5em 0px; background-color: rgba(255, 255, 255, 0.85);">
   <div class="video-container">
     <video class="bg-video" autoplay muted loop>
       <source src="images/video2.mp4" type="video/mp4" />
@@ -146,6 +122,66 @@
   </div>
 </section>
 <!-- End of Stories -->
+
+<!-- Popular tours -->
+<section class="popular-tours" id="gallery">
+  <h1 class="popular-tours-heading">Gallery</h1>
+  <div class="cards-wrapper">
+    <div class="card">
+      <a href="{% static 'images/agrodome1.jpg' %}" data-lightbox="agrodome" data-title="Agrodome - Image 1">
+        <img src="{% static 'images/agrodome.jpg' %}" alt="Agrodome" class="card-image" />
+        <h1 class="tour-name">Agrodome</h1>
+        <ul class="card-list">
+          <li class="card-list-item">Title</li>
+        </ul>
+      </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/agrodome2.jpg' %}" data-lightbox="agrodome" data-title="Agrodome - Image 2"></a>
+      <a href="{% static 'images/agrodome3.jpg' %}" data-lightbox="agrodome" data-title="Agrodome - Image 3"></a>
+    </div>
+    
+    <div class="card">
+      <a href="{% static 'images/chikitingbg1.jpg' %}" data-lightbox="chikiting" data-title="Another Image - Image 1">
+        <img src="{% static 'images/chikitingbg.jpg' %}" alt="Another Image" class="card-image" />
+        <h1 class="tour-name">Another Image</h1>
+        <ul class="card-list">
+          <li class="card-list-item">Title</li>
+        </ul>
+      </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/chikitingbg2.jpg' %}" data-lightbox="chikiting" data-title="Another Image - Image 2"></a>
+      <a href="{% static 'images/chikitingbg3.jpg' %}" data-lightbox="chikiting" data-title="Another Image - Image 3"></a>
+    </div>
+    
+    <div class="card">
+      <a href="{% static 'images/cherryb1.JPG' %}" data-lightbox="cherryb" data-title="Cherry Blossom 2023 - Image 1">
+        <img src="{% static 'images/cherryb.JPG' %}" alt="Cherry Blossom 2023" class="card-image" />
+        <h1 class="tour-name">Cherry Blossom 2023</h1>
+        <ul class="card-list">
+          <li class="card-list-item">7 days tour</li>
+        </ul>
+      </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/cherryb2.JPG' %}" data-lightbox="cherryb" data-title="Cherry Blossom 2023 - Image 2"></a>
+      <a href="{% static 'images/cherryb3.JPG' %}" data-lightbox="cherryb" data-title="Cherry Blossom 2023 - Image 3"></a>
+    </div>
+    
+    <div class="card">
+      <a href="{% static 'images/Potaroro1.jpg' %}" data-lightbox="potaroro" data-title="Potaroro Escapade - Image 1">
+        <img src="{% static 'images/Potaroro.jpg' %}" alt="Potaroro Escapade" class="card-image" />
+        <h1 class="tour-name">Potaroro Escapade</h1>
+        <ul class="card-list">
+          <li class="card-list-item">Title</li>
+        </ul>
+      </a>
+      <!-- Hidden sub-images for the lightbox -->
+      <a href="{% static 'images/Potaroro2.jpg' %}" data-lightbox="potaroro" data-title="Potaroro Escapade - Image 2"></a>
+      <a href="{% static 'images/Potaroro3.jpg' %}" data-lightbox="potaroro" data-title="Potaroro Escapade - Image 3"></a>
+    </div>
+    
+  </div>
+</section>
+<!-- End of Popular tours -->
 
 <!-- Contact -->
 <section class="contact" id="contact">
